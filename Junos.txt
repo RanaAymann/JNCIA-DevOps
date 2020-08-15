@@ -1,1 +1,10 @@
 
+# junos configurations
+
+
+# netconf session and then enter rpc command 
+
+>netconf
+<rpc><get-interface-information/></rpc>]]>]]>
+
+> show configuration | compare rollback 1
