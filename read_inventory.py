@@ -12,3 +12,4 @@ print(json.dumps(content))
 # paste the configuration in json format &  ctrl+d
 # show | compare
 # commit
+# close
