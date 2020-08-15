@@ -1,7 +1,7 @@
 import yaml
 import json
 
-filename = "inventory.yaml"
+filename = "inventory.yml"
 
 with open(filename) as f:
     content = yaml.load(f)
