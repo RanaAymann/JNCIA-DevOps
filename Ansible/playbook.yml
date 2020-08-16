@@ -1,1 +1,25 @@
+---
+- name : IJAUT lab playbook
+  hosts: vmx_devices
+  roles:
+    - Juniper.junos
+    connection: local
+    gather_facts: no
+  
+   vars_prompt:
+    - name: username
+    prompt: USERNAME 
+    private: no
+    - name : devicepass
+    prompt: PASSWORD
+    private: yes
 
+    tasks:
+     - name: Get Junos device information
+     Juniper_junos_facts:
+        user: "{{username}}"
+        passwd:  "{{devicepass}}"
+    
+    - name: print junos facts 
+      debug:
+        var: junos_facts  
