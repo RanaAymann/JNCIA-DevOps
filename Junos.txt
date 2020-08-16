@@ -8,3 +8,12 @@
 <rpc><get-interface-information/></rpc>]]>]]>
 
 > show configuration | compare rollback 1
+
+# json format
+
+>configure
+# load override ijaut/lab4-start.config
+#commit
+#show
+
+#show interface ge-0/0/0 terse | display json 
