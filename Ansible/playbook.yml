@@ -23,3 +23,15 @@
     - name: print junos facts 
       debug:
         var: junos_facts  
+
+   - name: Issue Junos RPC
+      Juniper_junos_rpc:
+        user: "{{username}}"    
+        passwd : "{{ devicepass}}" 
+        rpcs: get-software-information
+    register : rpc_response
+    
+    - name : Print the RPC output
+       debug:
+        var : rpc_response
+        
