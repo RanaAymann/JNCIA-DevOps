@@ -1,5 +1,3 @@
-# get route information for inet 0
-
 # !/usr/bin/python
 from jnpr.junos import Device
 
@@ -14,3 +12,7 @@ if __name__ == '__main__':
                                                route.findtext('rt-entry/protocol-name').strip()))
 
     dev.close()
+
+# get route information for inet 0
+# rpc call available in python
+# rpc call returns an lxml element object that may be parsed using XPath.
