@@ -1,0 +1,17 @@
+1- client --> REST server
+
+2- HTTP GET /rpc/get-software-information
+
+3- recieve XML , text , JSON documents + Provide GUI Explorer
+
+4- supports  MX , M, T ,PTX and SRX series platforms
+
+# set system services rest http 
+or 
+#set rest http port 3030 
+only supports ipv4.
+
+Rest API services by default listens to 3000 and 3443 ports.
+$ curl -u "username:password" protocol://device:port/rpc/procedure
+default is xml document returnd and get method
+
